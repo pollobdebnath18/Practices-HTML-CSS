@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>transform</title>
     <style>
-        .outer{
-            border: 2px solid tomato ;
-            width: 600px;
-            height: 500px;
-        }
-        .inner{
-            width: 300px;
-            height: 250px;
-            border: 2px solid blue;
-            /* transform: scale(1); */
-            /* transform: rotate(45deg); */
-            transform: translateX(10px);
-
-            
-        }
+      body {
+        margin-left: 20px;
+      }
+      .outer {
+        border: 2px solid tomato;
+        width: 600px;
+        height: 500px;
+      }
+      .inner {
+        width: 300px;
+        height: 250px;
+        border: 2px solid blue;
+        /* transform: scale(1); */
+        /* transform: rotate(45deg); */
+        transform: translateX(10px);
+      }
+      .box {
+        border: 1px solid navy;
+        width: 200px;
+        height: 200px;
+        background-color: gray;
+        margin-top: 10px;
+        transition: background-color 5s linear 1s;
+      }
+      .box:hover {
+        background-color: blue;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="outer">
-        <div class="inner"></div>
+      <div class="inner"></div>
     </div>
-</body>
+
+    <br />
+    <br />
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </body>
 </html>
